@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 onclick="this.style.color = 'pink';">My Title</h1>
+    <h2>My Subheading</h2>
+    <h3>My Article Title</h3>
+
+    <button type="button" name="button 1" id="alert">Alert Box</button>
+
+    <button type="button" name="button 2" id="confirm">Confirm Box</button>
+    <output name="result" id="confirmResponse"></output>
+
+    <!-- Prompt Box -->
+    <button type="button" name="button 3" id="prompt">Prompt Box</button>
+    <output name="result" id="promptResponse"></output>
+
+    <script type="text/JavaScript">
+      document.getElementsByTagName('h2')[0].onclick = function() {
+      document.getElementsByTagName('h2')[0].style.fontSize = `30px`;
+      };
+    </script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
